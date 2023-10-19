@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+</head>
+<body>
+    <h1>Jokenpo Duel</h1>
+    <h3>Player</h3>
+    <img src="./pedra.png" alt="">
+    <img src="./papel.png" alt="">
+    <img src="./tesoura.png" alt="">
+    
+    <form action="">
+    <label for="pedra">Pedra</label>
+    <input type="radio" name="grupo" id="pedra">
+    
+    <label for="papel">Papel</label>
+    <input type="radio" name="grupo" id="papel">
+    
+    <label for="tesoura">Tesoura</label>
+    <input type="radio" name="grupo" id="tesoura">
+    
+    <p>
+        <input type="button" value="JOGAR" onclick="jogar()">
+        <input type="button" value="RESET" onclick="resetar()">
+    </p>
+</form>
+
+
+    <hr>
+
+    <h3>Computador</h3>
+    <img src="./pc.png" alt="" id="pc">
+    <hr>
+    <h3>Resultado</h3>
+    <p id="placar"></p>
+
+    <script src="./jokenpo.js"></script>
+</body>
+</html>
